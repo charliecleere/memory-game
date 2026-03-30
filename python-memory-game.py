@@ -1,3 +1,9 @@
+# TODO: 
+# Fix the instructions and the display of it
+# Increase modularity (e.g., maybe do a function for displaying the instructions)
+# Maybe remove the "e.g." because some people may not know what it means. If you keep it figure out to do with the comma after "e.g."
+# Fix the comments throughout the program and probably add more
+
 from enum import Enum
 import random, os, time
 
@@ -50,7 +56,7 @@ def coordinateInput(isP1Turn, previousCoordinate, asterisks):
     while True:
         coordinate = input(f"\n{currentPlayerTurn} enter a coordinate: ")
         if len(coordinate) != 2:
-            print("Invalid input. Enter a letter followed by a number (e.g. A1).", end = '')
+            print("Invalid input. Enter a letter followed by a number (e.g., A1).", end = '')
             continue
         
         row = coordinate[0].upper() # Make the letter uppercase
@@ -58,7 +64,7 @@ def coordinateInput(isP1Turn, previousCoordinate, asterisks):
 
         # Error check to make sure the user inputted a valid coordinate, didn't choose the same coordinate twice or a coordinate that has already been matched
         if row not in "ABCD" or col not in "12345":
-            print("Invalid input. Enter a letter between A and D and a number between 1 and 5 (e.g. A1).", end = '')
+            print("Invalid input. Enter a letter between A and D and a number between 1 and 5 (e.g., A1).", end = '')
             continue
 
         if row + col == previousCoordinate:
