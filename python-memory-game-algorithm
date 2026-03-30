@@ -1,0 +1,49 @@
+??? Maybe explain the rules of the game to the users by printing out text
+??? Maybe, while the users are playing the game, add the option to allow the users to exit the game 
+
+1. Create a list with 20 asterisk strings
+2. Create a list with 20 special characters - !, @, #, $, %, &, ?, =, +, ~ (randomly shuffle the list for each game). These are the values under the asterisks
+3. Create enums by doing the following:
+	from enum import Enum
+
+	class Coordinates(Enum):
+   	  A1 = 1
+   	  A2 = 2
+   	  A3 = 3
+   	  A4 = 4
+   	  .
+  	  .
+   	  .
+      D5 = 20
+4. Print out the asterisk list as a 4 by 5 grid with coordinate markers to the left of the grid (A, B, C, D) with each corresponding to a row and below the grid (1, 2, 3, 4, 5) with each corresponding to a column
+5. Prompt the user for coordinates with the following syntax: user_input = input("Enter coordinates: ").upper()
+6. Error check (loop until the user gives a valid input)
+7. Do the following to store the user's chosen coordinates in a variable: firstCoordinate = Coordinates[user_input].name
+8. Because of the enums each coordinate is associated with a number (e.g. A1 = 1, A2 = 2,..., D5 = 20). To get the number associated with the coordinates the user entered, use the following syntax: Coordinates[user_input].value
+9. Store the special character of the coordinate in a variable by using the number (minus 1) from step 8 as an index in the special character list
+10. The number (minus 1) will be used as the index of the elements in the asterisk and special character lists that we will be changed. The element in the special character list at the given index will be stored in the element in the asterisk list at the same index
+11. Print the asterisk list. It will now print the special character of the asterisk that the user chose. (Remember to print with the coordinate markers on the left and below)
+12. To get the users second coordinate prompt the user for coordinates with the following syntax: user_input = input("Enter coordinates: ").upper()
+13. Error check (loop until the user gives a valid input (also make sure he doesn't choose the same coordinate, maybe by using the variable in step 8))
+14. Do the following to store the user's chosen coordinates in a variable: secondCoordinate = Coordinates[user_input].name
+15. Each coordinate is associated with a number (e.g. A1 = 1, A2 = 2,..., D5 = 20). To get the  number associated with the coordinates the user entered use the following syntax: Coordinates[user_input].value
+16. Store the special character of the coordinate in a variable by using the number (minus 1) as an index in the special character list
+17. The number (minus 1) will be used as the index of the elements in the asterisk and special character lists that we will be changed. The element in the special character list at the given index will be stored in the element in the asterisk list at the same index
+18. Print the asterisk list. It will now print the two special characters of the two asterisks that the user chose. (Include the coordinate markers on the left and below)
+19. If both special characters are the same let the user know he got a match and replace the two coordinates that the user chose with spaces. If true (i.e., user 1's turn) add one to user1score variable, else add one to user2score variable. This user's turn keeps going until he gets a mismatch.
+20. If the special characters chosen are different let the user know he didn't get a match. Also switch the spots the user chose on the grid back to asterisks. If true then change true to false, else change false to true.
+21. Repeat this until the points for both users equals 10 (all items are matched)
+22. Compare scores and print the winner of the game (or print a tie)
+
+Notes:
+- Steps 1-3 and 22 outside of while loop
+- We probably have to initialize the variables for each users score outside the while loop
+- At the beginning of the while loop set firstCoordinate and secondCoordinate back to default values
+
+Functions:
+- Print grid (step 4 and 11)
+- Bring in coordinates and error check (steps 5/6 and 12/13)
+
+Assignments:
+Owen - Functions and steps 1, 2, 22
+Charlie - Enums related stuff and other stuff
