@@ -1,5 +1,5 @@
 # TODO: 
-# Fix the instructions and the display of it. Also maybe give the users the option to view the instructions or not view it
+# Fix the instructions and the display of it. Also maybe give the users the option to view the instructions or not view it. Maybe have starting screen have "Welcome to Memory!", and under that have "1. How to Play" followed by "2. Start Game" at the next line
 # Increase modularity (e.g., maybe do a function for displaying the instructions)
 # Maybe remove the "e.g." because some people may not know what it means. If you keep it, figure out to do with the comma after "e.g."
 # Fix the comments throughout the program and probably add more
