@@ -1,9 +1,12 @@
 # TODO: 
 # Fix the instructions and the display of it
 # Increase modularity (e.g., maybe do a function for displaying the instructions)
-# Maybe remove the "e.g." because some people may not know what it means. If you keep it figure out to do with the comma after "e.g."
+# Maybe remove the "e.g." because some people may not know what it means. If you keep it, figure out to do with the comma after "e.g."
 # Fix the comments throughout the program and probably add more
 # Understand the purpose of the .gitattributes file and what it does
+# While the users are playing the game, maybe give them the option to exit
+# Maybe give the users the option to play more than one game. If you do this, maybe allow the users to do a series (maybe having them choose if they want to do, e.g., best-of-3 or best-of-7), keep track of the score in the series, and display winner of it
+
 
 from enum import Enum
 import random, os, time, sys
