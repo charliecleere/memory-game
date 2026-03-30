@@ -5,7 +5,7 @@
 # Fix the comments throughout the program and probably add more
 
 from enum import Enum
-import random, os, time
+import random, os, time, sys
 
 class Coordinates(Enum):
     A1 = 0
@@ -144,6 +144,16 @@ def main():
                 isP1Turn = True
 
         time.sleep(2.25)
+
+        # Clears any input typed during the pause
+        if os.name == "nt":  # Windows
+            import msvcrt
+            # Check if any keys were pressed
+            while msvcrt.kbhit():
+                msvcrt.getch()  # Read and discard them
+        else:  # Unix-like systems (Linux, macOS)
+            import termios
+            termios.tcflush(sys.stdin, termios.TCIFLUSH)  # Flush input buffer
 
     os.system('cls' if os.name == 'nt' else 'clear')
     printScoreBoard(p1Score, p2Score)
