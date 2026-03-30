@@ -3,6 +3,7 @@
 # Increase modularity (e.g., maybe do a function for displaying the instructions)
 # Maybe remove the "e.g." because some people may not know what it means. If you keep it figure out to do with the comma after "e.g."
 # Fix the comments throughout the program and probably add more
+# Understand the purpose of the .gitattributes file and what it does
 
 from enum import Enum
 import random, os, time, sys
