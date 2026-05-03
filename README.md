@@ -1,1 +1,1 @@
-# python-memory-game
+# memory-game
