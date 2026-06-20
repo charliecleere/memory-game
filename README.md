@@ -27,7 +27,7 @@ D * * * * *
 ## Installation
 
 ### Requirements
-- Python 3.x
+- Python 3.6 or higher
 
 ### Setup
 1. Clone the repository:
@@ -88,6 +88,7 @@ Welcome to Memory!
 memory-game/
 ├── memory-game.py          # Main game script
 ├── README.md               # Project documentation
+├── requirements.txt        # Python dependencies
 ├── .gitignore              # Git ignore rules
 └── .gitattributes          # Git attributes configuration
 ```
