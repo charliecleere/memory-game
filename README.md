@@ -1,4 +1,4 @@
-# Memory Game 🎮
+# Memory Game
 
 A two-player terminal-based memory card matching game written in Python. Test your memory skills by matching pairs of symbols on a 4x5 grid!
 
@@ -68,12 +68,12 @@ Welcome to Memory!
 
 ## Features
 
-- ✨ Cross-platform support (Windows, macOS, Linux)
-- 🎯 Score tracking for both players
-- 🎲 Randomized symbol placement
-- 🎪 Visual grid display
-- ⏱️ Pause between turns for fairness
-- 🧹 Input buffer clearing to prevent accidental entries during pauses
+- Cross-platform support (Windows, macOS, Linux)
+- Score tracking for both players
+- Randomized symbol placement
+- Visual grid display
+- Pause between turns for fairness
+- Input buffer clearing to prevent entries during pauses
 
 ## Technical Details
 
@@ -103,4 +103,4 @@ This project is open source and available for personal and educational use.
 
 ---
 
-**Enjoy the game!** 🎉
+**Enjoy the game!**
