@@ -72,11 +72,12 @@ Welcome to Memory!
 
 ```
 memory-game/
-├── memory-game.py          # Main game script
-├── README.md               # Project documentation
-├── requirements.txt        # Python dependencies
+├── .gitattributes          # Git attributes configuration
 ├── .gitignore              # Git ignore rules
-└── .gitattributes          # Git attributes configuration
+├── LICENSE                 # Project license
+├── README.md               # Project documentation
+├── memory-game.py          # Main game script
+└── requirements.txt        # Python dependencies
 ```
 
 ## Contributing
