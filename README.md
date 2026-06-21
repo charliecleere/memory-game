@@ -81,7 +81,7 @@ memory-game/
 
 ## Contributing
 
-Feel free to fork this repository and submit pull requests for any improvements or bug fixes!
+Feel free to fork this repository and submit pull requests for any improvements or bug fixes.
 
 ## License
 
