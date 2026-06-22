@@ -86,4 +86,4 @@ Feel free to fork this repository and submit pull requests for any improvements 
 
 ## License
 
-This project is open source and available for personal and educational use.
+This project is licensed under the MIT License.
